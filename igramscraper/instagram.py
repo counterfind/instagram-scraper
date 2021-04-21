@@ -176,6 +176,9 @@ class Instagram:
                 headers['x-instagram-gis'] = gis_token
 
         headers['X-Crawlera-Profile'] = "desktop"
+        headers['X-Crawlera-Use-Https'] = '1'
+        headers['X-Crawlera-Timeout'] = '40000'
+        headers['X-Crawlera-Max-Retries'] = '3'
 
         return headers
 
