@@ -175,6 +175,8 @@ class Instagram:
             if gis_token is not None:
                 headers['x-instagram-gis'] = gis_token
 
+        headers['X-Crawlera-Profile'] = "desktop"
+
         return headers
 
     def __generate_gis_token(self, variables):
